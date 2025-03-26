@@ -9,7 +9,7 @@ export interface Todo {
   text: string
   completed: boolean
   createdAt: Date
-  dueDate: Date
+  duedatee: Date
 }
 
 export default function TodoApp() {
@@ -30,7 +30,7 @@ export default function TodoApp() {
       text,
       completed: false,
       createdAt: new Date(),
-      dueDate: new Date(Date.now() + 7*24*60*60*1000)
+      duedatee: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7)
     }])
   }
 
