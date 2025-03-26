@@ -9,7 +9,7 @@ export interface Todo {
   text: string
   completed: boolean
   createdAt: Date
-  priority?: 'low' | 'medium' | 'high'
+  priority?: 'düşük' | 'orta' | 'yüksek'
 }
 
 export default function TodoApp() {
@@ -30,7 +30,7 @@ export default function TodoApp() {
       text,
       completed: false,
       createdAt: new Date(),
-      priority: 'low'
+      priority: 'düşük'
     }])
   }
 
